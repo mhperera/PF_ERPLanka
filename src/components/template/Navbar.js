@@ -17,7 +17,7 @@ const Navbar = ({ navigation, onClickNavItem }) => {
 
 	return (
 		<>
-			<nav>
+			<nav className='sticky top-0 z-50'>
 				<div className="flex flex-row justify-between items-center py-2 bg-primary-darker text-white font-normal px-8 text-base w-full">
 					<div className="flex">
 						<TfiEmail className="scale-1 mr-5" />
