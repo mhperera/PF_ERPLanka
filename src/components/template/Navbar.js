@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { TfiEmail } from 'react-icons/tfi';
@@ -12,10 +12,9 @@ import Button from '../ui/Button';
 import { useRouter } from 'next/router';
 
 const Navbar = ({ navigation, onClickNavItem }) => {
-
 	const [scrolled, setScrolled] = useState(false);
 
-	useEffect(()=>{
+	useEffect(() => {
 		const handleScroll = () => {
 			if (window.scrollY > 100) {
 				setScrolled(true);
@@ -35,10 +34,8 @@ const Navbar = ({ navigation, onClickNavItem }) => {
 
 	return (
 		<>
-			<nav className='sticky top-0 z-50'>
-
-				{ !scrolled &&
-
+			<nav className="sticky top-0 z-50">
+				{!scrolled && (
 					<div className="flex flex-row justify-between items-center py-2 bg-primary-darker text-white font-normal px-8 text-base w-full transition-all duration-1000 ease-in-out">
 						<div className="flex">
 							<TfiEmail className="scale-1 mr-5" />
@@ -62,8 +59,7 @@ const Navbar = ({ navigation, onClickNavItem }) => {
 							<FaYoutubeSquare className="scale-1 mr-5" />
 						</div>
 					</div>
-
-				}
+				)}
 
 				<div className="flex flex-row justify-between items-center px-8 py-4 w- bg-white">
 					<Image
@@ -77,20 +73,30 @@ const Navbar = ({ navigation, onClickNavItem }) => {
 							<li key={navItem.name}>
 								<Link
 									href={navItem.href}
-									className={`block py-2 px-4 hover:text-primary-darker border-b-2 ${ (router.pathname==navItem.href) ? 'border-primary' : 'border-transparent' }`}
-									onClick={()=>{onClickNavItem(navItem.href);}}
+									className={`block py-2 px-4 hover:text-primary-darker border-b-2 transition-all duration-300 ${
+										router.pathname == navItem.href
+											? 'border-primary'
+											: 'border-transparent'
+									}`}
+									onClick={() => {
+										onClickNavItem(navItem.href);
+									}}
 								>
 									{navItem.name}
 								</Link>
 							</li>
 						))}
 						<li>
-							<Button href="/become-a-partner" className="btn-ghost">Become a Partner</Button>
+							<Button
+								href="/become-a-partner"
+								className="btn-ghost"
+							>
+								Become a Partner
+							</Button>
 						</li>
 						<li>
 							<Button href="/login">Login</Button>
 						</li>
-
 					</ul>
 				</div>
 			</nav>

@@ -2,73 +2,67 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-    @apply transition-all
-        duration-300;
-}
-
 body {
-    @apply tracking-wide bg-slate-100;
-
+	@apply tracking-wide bg-slate-100;
 }
 
-.btn-ghost{
-    @apply border-2 bg-transparent border-primary-dark hover:bg-transparent text-black !important;
+.btn-ghost {
+	@apply border-2 bg-transparent border-primary-dark hover:bg-transparent text-black transition-all duration-300 !important;
 }
 
-.btn-lg{
-    @apply inline-block px-6 py-3 text-lg font-semibold m-0 !important;
+.btn-lg {
+	@apply inline-block px-6 py-3 text-lg font-semibold m-0 !important;
 }
 
-p{
-    @apply leading-10;
-    /* text-justify: distribute; */
-    text-justify: inter-character;
+p {
+	@apply leading-10;
+	/* text-justify: distribute; */
+	text-justify: inter-character;
 }
 
-.card{
-    @apply
-        bg-white
+.card {
+	@apply bg-white
         mx-2
         px-12
         py-8
         shadow-sm
         hover:shadow-md
-    ;
+        transition-all
+        duration-300;
 }
 
 .card .circle {
-    @apply bg-white mx-auto rounded-full flex justify-center items-center;
-    width: 140px;
-    margin-top: -90px;
-    height: 140px;
-    overflow: hidden;
+	@apply bg-white mx-auto rounded-full flex justify-center items-center;
+	width: 140px;
+	margin-top: -90px;
+	height: 140px;
+	overflow: hidden;
 }
 
-.card .circle img{
-    width: 130px;
+.card .circle img {
+	width: 130px;
 }
 
-.card h1{
-    @apply text-3xl text-center my-4 font-semibold text-dark ;
+.card h1 {
+	@apply text-3xl text-center my-4 font-semibold text-dark;
 }
 
-.card h2{
-    @apply text-lg text-center my-4 font-semibold text-primary-dark hover:text-sky-950;
+.card h2 {
+	@apply text-lg text-center my-4 font-semibold text-primary-dark hover:text-sky-950 transition-all duration-300;
 }
 
-.card ul{
-    @apply text-left my-4 font-semibold text-slate-500 list-disc ;
+.card ul {
+	@apply text-left my-4 font-semibold text-slate-500 list-disc;
 }
 
-.card a{
-    @apply w-full hover:text-primary-dark;
+.card a {
+	@apply w-full hover:text-primary-dark transition-all duration-300;
 }
 
-.card li{
-    @apply py-1;
+.card li {
+	@apply py-1;
 }
 
-footer{
-    @apply bg-dark w-full px-12 py-8 mt-24;
+footer {
+	@apply bg-dark w-full px-12 py-8 mt-24;
 }
