@@ -6,7 +6,7 @@ const Button = (props) => {
 
 	return (
 		<button
-			className={`bg-dark px-4 py-2 m-0 ml-5 text-white transition duration-300 hover:bg-primary-dark hover:rounded-ss-md hover:rounded-ee-md border-2 border-transparent ${props.className}`}
+			className={`bg-dark px-4 py-2 m-0 ml-5 text-white transition duration-300 hover:bg-primary-dark hover:rounded-ss-xl hover:rounded-ee-xl border-2 border-transparent ${props.className}`}
 			onClick={() => {
 				router.push(props.href);
 			}}

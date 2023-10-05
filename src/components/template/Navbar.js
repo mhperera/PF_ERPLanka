@@ -42,7 +42,7 @@ const Navbar = ({ navigation, onClickNavItem }) => {
 					</div>
 				</div>
 
-				<div className="flex flex-row justify-between items-center px-8 py-4 w-full">
+				<div className="flex flex-row justify-between items-center px-8 py-4 w- bg-white">
 					<Image
 						src="/images/mis_erp_solutions.png"
 						alt=""

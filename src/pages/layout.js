@@ -2,6 +2,7 @@ import { Fragment, useState } from 'react';
 import Navbar from '@/components/template/Navbar';
 import Wrapper from '@/components/ui/Wrapper';
 import Carousel from '@/components/ui/Carousel';
+import Footer from '@/components/template/Footer';
 
 const navigation = [
 	{ name: 'Home', href: '/', current: true },
@@ -33,6 +34,7 @@ const Layout = ({ children }) => {
 			<Navbar navigation={navLinks} onClickNavItem={handleClickNavItem} />
 			{/* <Carousel carouselImages={carouselImages}/> */}
 			<Wrapper>{children}</Wrapper>
+			<Footer/>
 		</>
 	);
 };
