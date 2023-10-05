@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ['latin'] })
 const Wrapper = ({children}) => {
   return (
     <main
-      className={`flex min-h-screen flex-col p-24 ${inter.className}`}
+      className={`flex min-h-screen flex-col px-24 py-0 my-0 ${inter.className}`}
     >
         {children}
     </main>

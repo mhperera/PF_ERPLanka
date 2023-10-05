@@ -18,7 +18,7 @@ const Navbar = ({ navigation, onClickNavItem }) => {
 	return (
 		<>
 			<nav>
-				<div className="flex flex-row justify-between items-center w-screen py-2 bg-primary-dark text-white font-normal px-8 text-base">
+				<div className="flex flex-row justify-between items-center py-2 bg-primary-darker text-white font-normal px-8 text-base w-full">
 					<div className="flex">
 						<TfiEmail className="scale-1 mr-5" />
 						<span className="-mt-[6px]">
@@ -42,7 +42,7 @@ const Navbar = ({ navigation, onClickNavItem }) => {
 					</div>
 				</div>
 
-				<div className="flex flex-row justify-between items-center w-screen px-8 py-4">
+				<div className="flex flex-row justify-between items-center px-8 py-4 w-full">
 					<Image
 						src="/images/mis_erp_solutions.png"
 						alt=""
@@ -54,7 +54,7 @@ const Navbar = ({ navigation, onClickNavItem }) => {
 							<li key={navItem.name}>
 								<Link
 									href={navItem.href}
-									className={`block py-2 px-4 hover:text-primary-dark border-b-2 ${ (router.pathname==navItem.href) ? 'border-primary' : 'border-transparent' }`}
+									className={`block py-2 px-4 hover:text-primary-darker border-b-2 ${ (router.pathname==navItem.href) ? 'border-primary' : 'border-transparent' }`}
 									onClick={()=>{onClickNavItem(navItem.href);}}
 								>
 									{navItem.name}
@@ -62,7 +62,7 @@ const Navbar = ({ navigation, onClickNavItem }) => {
 							</li>
 						))}
 						<li>
-							<Button>Login</Button>
+							<Button href="/login">Login</Button>
 						</li>
 					</ul>
 				</div>
