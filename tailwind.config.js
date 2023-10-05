@@ -17,7 +17,8 @@ module.exports = {
 				},
 				secondary: {
 					DEFAULT: '#2b9e1b', // Base color
-				}
+				},
+				dark: '#2f2e41'
 			},
 			transitionProperty: {},
 			height: {
