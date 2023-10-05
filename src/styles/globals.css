@@ -52,7 +52,7 @@ p {
 }
 
 .card ul {
-	@apply text-left my-4 font-semibold text-slate-500 list-disc;
+	@apply text-center my-8 font-semibold text-slate-500 list-none;
 }
 
 .card a {
@@ -60,7 +60,7 @@ p {
 }
 
 .card li {
-	@apply py-1;
+	@apply py-3 border-b-[1px] border-slate-200;
 }
 
 footer {

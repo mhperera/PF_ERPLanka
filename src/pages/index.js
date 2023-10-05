@@ -31,7 +31,7 @@ export default function Home() {
 						<Link href=''><li>Enterprises</li></Link>
 						<Link href=''><li>Online</li></Link>
 						<Link href=''><li>Printing softwares</li></Link>
-						<Link href=''><li>Integration</li></Link>
+						<Link href=''><li className='!border-b-0'>Integration</li></Link>
 					</ul>
 				</Card>
 
@@ -44,7 +44,7 @@ export default function Home() {
 						<Link href=''><li>MIS CRM Management</li></Link>
 						<Link href=''><li>MIS Fuel Management</li></Link>
 						<Link href=''><li>MIS Online Payroll</li></Link>
-						<Link href=''><li>MIS HRM</li></Link>
+						<Link href=''><li className='!border-b-0'>MIS HRM</li></Link>
 					</ul>
 				</Card>
 
@@ -57,7 +57,7 @@ export default function Home() {
 						<Link href=''><li>HRM</li></Link>
 						<Link href=''><li>Micro Finance</li></Link>
 						<Link href=''><li>Fixed assets</li></Link>
-						<Link href=''><li>POS</li></Link>
+						<Link href=''><li className='!border-b-0'>POS</li></Link>
 					</ul>
 				</Card>
 			</Section>
