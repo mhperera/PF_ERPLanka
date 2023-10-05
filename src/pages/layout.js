@@ -1,6 +1,6 @@
 import { Fragment, useState } from 'react';
 import Navbar from '@/components/template/Navbar';
-import Wrapper from '@/components/template/Wrapper';
+import Wrapper from '@/components/ui/Wrapper';
 import Carousel from '@/components/ui/Carousel';
 
 const navigation = [

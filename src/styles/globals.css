@@ -13,3 +13,7 @@ body {
 .btn-lg{
     @apply inline-block px-6 py-3 text-lg font-semibold m-0 !important;
 }
+
+p{
+    @apply leading-8;
+}
