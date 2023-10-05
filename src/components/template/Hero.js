@@ -4,13 +4,13 @@ import Button from '../ui/Button';
 
 const Hero = () => {
 	return (
-		<section className="bg-cover bg-center bg-gradient-to-r from-primary to-secondary h-128 relative flex items-center !-mx-24">
-			<div className="container mx-auto px-8 text-left relative z-10 w-2/3">
+		<section className="bg-cover bg-center bg-gradient-to-r from-primary to-secondary h-128 relative flex items-center !-mx-24 !px-48 !gap-24">
+			<div className="container mx-auto text-left relative z-10 w-2/3">
 				<h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white leading-tight">
 					Welcome to ERP Lanka
 				</h1>
 				<p className="mt-4 text-lg text-white font-medium">
-					We provide top-notch services to meet your needs.
+					We provide top-notch  accounting software solutions, including QuickBooks, and customizable ERP systems.
 				</p>
 				<div className="mt-8">
 					<Button

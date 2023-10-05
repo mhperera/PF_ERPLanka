@@ -15,5 +15,7 @@ body {
 }
 
 p{
-    @apply leading-8;
+    @apply leading-10;
+    /* text-justify: distribute; */
+    text-justify: inter-character;
 }
