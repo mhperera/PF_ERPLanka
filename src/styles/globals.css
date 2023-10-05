@@ -64,5 +64,5 @@ p {
 }
 
 footer {
-	@apply bg-dark w-full px-12 py-8 mt-24;
+	@apply bg-dark w-full px-12 py-4 mt-12;
 }
