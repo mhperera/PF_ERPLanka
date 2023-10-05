@@ -15,7 +15,7 @@ const Hero = () => {
 				<div className="mt-8">
 					<Button
 						href="/contact"
-						className="inline-block px-6 py-3 text-lg font-semibold !m-0"
+						className="btn-lg"
 					>
 						Contact Us
 					</Button>

@@ -62,8 +62,12 @@ const Navbar = ({ navigation, onClickNavItem }) => {
 							</li>
 						))}
 						<li>
+							<Button href="/become-a-partner" className="btn-ghost">Become a Partner</Button>
+						</li>
+						<li>
 							<Button href="/login">Login</Button>
 						</li>
+
 					</ul>
 				</div>
 			</nav>

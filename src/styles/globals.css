@@ -6,7 +6,10 @@ body {
     @apply tracking-wide;
 }
 
-#hero_image {
-    /* width: 50% !important;
-    height: auto !important; */
+.btn-ghost{
+    @apply border-2 bg-transparent border-primary-dark hover:bg-transparent text-black !important;
+}
+
+.btn-lg{
+    @apply inline-block px-6 py-3 text-lg font-semibold m-0 !important;
 }
