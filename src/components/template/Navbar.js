@@ -75,7 +75,7 @@ const Navbar = ({ navigation, onClickNavItem }) => {
 									href={navItem.href}
 									className={`block py-2 px-4 hover:text-primary-darker border-b-2 transition-all duration-300 ${
 										router.pathname == navItem.href
-											? 'border-primary'
+											? 'border-primary-light'
 											: 'border-transparent'
 									}`}
 									onClick={() => {

@@ -9,8 +9,8 @@ module.exports = {
 		extend: {
 			colors: {
 				primary: {
-					light: '#06b6d4', // Lighten level
-					DEFAULT: '#0ea5e9', // Base color
+					light: '#0ea5e9', // Lighten level
+					DEFAULT: '#0369a1', // Base color
 					dark: '#0369a1', // Darken level
 					darker: '#11358b', // Darken level
 

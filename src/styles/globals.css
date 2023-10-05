@@ -7,7 +7,7 @@ body {
 }
 
 .btn-ghost {
-	@apply border-2 bg-transparent border-primary-dark hover:bg-transparent text-black transition-all duration-300 !important;
+	@apply border-2 bg-transparent border-primary-light hover:bg-transparent text-black transition-all duration-300 !important;
 }
 
 .btn-lg {
