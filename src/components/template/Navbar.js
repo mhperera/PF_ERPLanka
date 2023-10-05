@@ -8,8 +8,13 @@ import {
 	FaTwitterSquare,
 	FaYoutubeSquare,
 } from 'react-icons/fa';
+import Button from '../ui/Button';
+import { useRouter } from 'next/router';
 
-const Navbar = ({ navigation }) => {
+const Navbar = ({ navigation, onClickNavItem }) => {
+
+	const router = useRouter();
+
 	return (
 		<>
 			<nav>
@@ -49,12 +54,16 @@ const Navbar = ({ navigation }) => {
 							<li key={navItem.name}>
 								<Link
 									href={navItem.href}
-									className="block py-2 px-4 hover:bg-primary hover:text-white hover:rounded-ss-md hover:rounded-ee-md"
+									className={`block py-2 px-4 hover:text-primary-dark border-b-2 ${ (router.pathname==navItem.href) ? 'border-primary' : 'border-transparent' }`}
+									onClick={()=>{onClickNavItem(navItem.href);}}
 								>
 									{navItem.name}
 								</Link>
 							</li>
 						))}
+						<li>
+							<Button>Login</Button>
+						</li>
 					</ul>
 				</div>
 			</nav>

@@ -14,11 +14,12 @@ module.exports = {
 			},
 			colors: {
 				primary: {
-					DEFAULT : '#0ea5e9', // Base color
-					dark    : '#0369a1', // Darken level
-          light   : '#06b6d4'  // Lighten level
+					DEFAULT: '#0ea5e9', // Base color
+					dark: '#0369a1', // Darken level
+					light: '#06b6d4', // Lighten level
 				},
 			},
+			transitionProperty: {},
 		},
 	},
 	plugins: [],
